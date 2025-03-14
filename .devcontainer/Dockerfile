@@ -12,6 +12,9 @@ RUN version=0.0.42 \
     && rm -f pulumictl-v$version-linux-amd64.tar.gz \
     && pulumictl version
 
+# Jake's bonus stuff
+RUN pip install -U pip setuptools
+
 # Add non-root user
 ARG USER_NAME=user
 ARG USER_UID=1000
