@@ -18,14 +18,14 @@ from pulumi import Inputs, ResourceOptions
 from pulumi.provider import ConstructResult
 import pulumi.provider as provider
 
-import xyz_provider
-from xyz_provider.staticpage import StaticPage, StaticPageArgs
+import shopkeeper_provider
+from shopkeeper_provider.staticpage import StaticPage, StaticPageArgs
 
 
 class Provider(provider.Provider):
 
     def __init__(self) -> None:
-        super().__init__(xyz_provider.__version__, xyz_provider.__schema__)
+        super().__init__(shopkeeper_provider.__version__, shopkeeper_provider.__schema__)
 
     def construct(self,
                   name: str,
@@ -33,7 +33,7 @@ class Provider(provider.Provider):
                   inputs: Inputs,
                   options: Optional[ResourceOptions] = None) -> ConstructResult:
 
-        if resource_type == 'xyz:index:StaticPage':
+        if resource_type == 'shopkeeper:index:StaticPage':
             return _construct_static_page(name, inputs, options)
 
         raise Exception(f'Unknown resource type {resource_type}')

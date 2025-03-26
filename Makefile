@@ -12,7 +12,8 @@ SCHEMA_PATH     := ${WORKING_DIR}/schema.json
 SRC             := provider/cmd/pulumi-resource-${PACK}
 
 # The pulumi binary to use during generation
-PULUMI := .pulumi/bin/pulumi
+#PULUMI := .pulumi/bin/pulumi
+PULUMI := /usr/bin/pulumi
 
 export PULUMI_IGNORE_AMBIENT_PLUGINS = true
 

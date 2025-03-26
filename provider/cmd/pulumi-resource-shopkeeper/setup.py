@@ -2,7 +2,7 @@ from distutils.core import setup
 import os.path
 
 
-PKG = 'xyz_provider'
+PKG = 'shopkeeper_provider'
 
 
 def read_version():
