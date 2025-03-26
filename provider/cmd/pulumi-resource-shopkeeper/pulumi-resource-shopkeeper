@@ -1,3 +1,4 @@
 #!/bin/bash
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
-"$SCRIPT_DIR/venv/bin/python" "$SCRIPT_DIR/run-provider.py" $@
+#"$SCRIPT_DIR/venv/bin/python" "$SCRIPT_DIR/run-provider.py" $@
+poetry run python "$SCRIPT_DIR/run-provider.py" $@
