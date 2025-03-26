@@ -1,8 +1,8 @@
 [project]
-  name = "pulumi_xyz"
+  name = "pulumi_shopkeeper"
   description = "A Pulumi component provider from the pulumi-component-provider-py-boilerplate template."
   dependencies = ["parver>=0.2.1", "pulumi>=3.0.0,<4.0.0", "semver>=2.8.1"]
-  keywords = ["pulumi", "xyz"]
+  keywords = ["pulumi", "shopkeeper"]
   readme = "README.md"
   requires-python = ">=3.8"
   version = "0.0.0"
@@ -10,7 +10,7 @@
     text = "Apache-2.0"
   [project.urls]
     Homepage = "https://example.com"
-    Repository = "https://github.com/example/pulumi-xyz"
+    Repository = "https://github.com/example/pulumi-shopkeeper"
 
 [build-system]
   requires = ["setuptools>=61.0"]
@@ -19,4 +19,4 @@
 [tool]
   [tool.setuptools]
     [tool.setuptools.package-data]
-      pulumi_xyz = ["py.typed", "pulumi-plugin.json"]
+      pulumi_shopkeeper = ["py.typed", "pulumi-plugin.json"]

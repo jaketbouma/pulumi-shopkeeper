@@ -1,7 +1,7 @@
 {
-    "name": "xyz",
+    "name": "shopkeeper",
     "resources": {
-        "xyz:index:StaticPage": {
+        "shopkeeper:index:StaticPage": {
             "isComponent": true,
             "inputProperties": {
                 "indexContent": {
@@ -37,7 +37,7 @@
         },
         "go": {
             "generateResourceContainerTypes": true,
-            "importBasePath": "github.com/pulumi/pulumi-xyz/sdk/go/xyz"
+            "importBasePath": "github.com/pulumi/pulumi-shopkeeper/sdk/go/shopkeeper"
         },
         "nodejs": {
             "dependencies": {
